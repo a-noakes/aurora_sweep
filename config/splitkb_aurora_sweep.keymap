@@ -15,7 +15,6 @@
 };
 
 / { 
-
     combos {
         compatible = "zmk,combos";
         combo_esc {
