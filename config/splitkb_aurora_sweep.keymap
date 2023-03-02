@@ -21,30 +21,35 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
+            // Q+W
             bindings = <&kp ESC>;
         };
         
          combo_tab {
             timeout-ms = <50>;
             key-positions = <10 11>;
+            // A+S
             bindings = <&kp TAB>;
         };
         
             combo_ralt {
             timeout-ms = <50>;
             key-positions = <17 16>;
+            // J+K
             bindings = <&kp RALT>;
         };
         
                     combo_lalt {
             timeout-ms = <50>;
             key-positions = <11 12>;
+            // S+D
             bindings = <&kp LALT>;
         };
         
                            combo_lgui {
             timeout-ms = <50>;
             key-positions = <12 13>;
+            //D+F
             bindings = <&kp LGUI>;
         };
         
@@ -52,6 +57,7 @@
        combo_rgui {
             timeout-ms = <50>;
             key-positions = <17 18>;
+            // K+L
             bindings = <&kp RGUI>;
         };
         
@@ -59,15 +65,23 @@
         
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
                 
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
+		&kp Q &kp W &kp E &kp R &kp T 						            &kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
-                     &sl 2      &kp LSHFT      &kp SPACE  &sl 1 
+		&mt LSFT Z &kp X &kp C &kp V &kp B				            &kp N &kp M  &kp CMMA &kp DOT &kp QMARK 
+                 &sl 2      &kp LSHFT                     &kp SPACE  &sl 1 
 		>;
 		};
 
@@ -84,7 +98,7 @@
 		bindings = <
     &kp ESC   &kp LMETA  &kp LA(C)   &caps_word   &none        &kp LG(TAB) &kp LG(LS(LBKT)) &kp LG(LS(RBKT))  &kp PSCRN  &kp LC(U) 
     &sk LSHFT &sk LCTRL   &sk LALT   &sk LCMD    &none         &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT  &kp LC(D) 
-    &kp LG(Z)  &kp LG(X)  &kp LG(C) &kp LG(V)    &none          &kp DEL  &kp BSPC    &kp TAB   &kp LC(BSLH)  &kp RET
+    &kp LG(Z)  &kp LG(X)  &kp LG(C) &kp LG(V)    &none         &kp DEL  &kp BSPC    &kp TAB   &kp LC(BSLH)  &kp RET
                                     &none       &lt 0       &key_repeat   &trans
 		>;
 		};
