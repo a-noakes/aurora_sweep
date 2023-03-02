@@ -71,15 +71,6 @@
 		>;
 		};
 
-       		left_layer {
-		bindings = <
-    &kp ESC   &kp LMETA  &kp LA(C)   &caps_word   &none        &kp LG(TAB) &kp LG(LS(LBKT)) &kp LG(LS(RBKT))  &kp PSCRN  &kp LC(U) 
-    &sk LSHFT &sk LCTRL   &sk LALT   &sk LCMD    &none         &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT  &kp LC(D) 
-    &kp LG(Z)  &kp LG(X)  &kp LG(C) &kp LG(V)    &none          &kp DEL  &kp BSPC    &kp TAB   &kp LC(BSLH)  &kp RET
-                                    &none       &lt 0       &key_repeat   &trans
-		>;
-		};
-		
 		right_layer {
 		bindings = <
     &kp EXCL   &kp AT     &kp HASH   &kp COLON  &kp SEMI       &kp EQUAL  &kp N7    &kp N8      &kp N9     &kp PLUS
@@ -88,6 +79,15 @@
                                     &none       &lt 0          &trans      &none
 		>;
 		};	
+          
+       		left_layer {
+		bindings = <
+    &kp ESC   &kp LMETA  &kp LA(C)   &caps_word   &none        &kp LG(TAB) &kp LG(LS(LBKT)) &kp LG(LS(RBKT))  &kp PSCRN  &kp LC(U) 
+    &sk LSHFT &sk LCTRL   &sk LALT   &sk LCMD    &none         &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT  &kp LC(D) 
+    &kp LG(Z)  &kp LG(X)  &kp LG(C) &kp LG(V)    &none          &kp DEL  &kp BSPC    &kp TAB   &kp LC(BSLH)  &kp RET
+                                    &none       &lt 0       &key_repeat   &trans
+		>;
+		};
 		
 		tri_layer {
 		bindings = <
