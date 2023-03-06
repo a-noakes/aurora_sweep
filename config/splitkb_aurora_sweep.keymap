@@ -87,8 +87,6 @@
             bindings = <&kp RC(RALT)>;
         };
 
-        // Layer 1 modifier combos
-
           combo_ctrl_opt {
             timeout-ms = <50>;
             key-positions = <11 12>;
@@ -148,8 +146,10 @@
 		tri_layer {
 		bindings = <
     &trans     &trans     &trans     &trans    &reset     &trans     &trans     &trans     &trans    &reset
-    &kp GRAVE  &kp AMPS   &kp CARET   &kp DLLR     &kp PRCNT      &trans     &trans     &trans    &bootloader &trans
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+    &trans     &trans     &trans     &trans    &reset     &trans     &trans     &trans     &trans    &reset
+    &trans     &trans     &trans     &trans    &reset     &trans     &trans     &trans     &trans    &reset
+    // &kp GRAVE  &kp AMPS   &kp CARET   &kp DLLR     &kp PRCNT      &trans     &trans     &trans    &bootloader &trans
+		// &bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
 		                           			 &trans &trans  					&trans &trans 
 		>;
 		};	
