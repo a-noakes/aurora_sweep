@@ -23,12 +23,33 @@
             // Q+W
             bindings = <&kp ESC>;
         };
+
+        combo_bspc_word {
+            timeout-ms = <50>;
+            key-positions = <13 16>;
+            // F+J
+            bindings = <&kp LA(BSPC)>;
+        };
+
+        combo_del_word {
+            timeout-ms = <50>;
+            key-positions = <12 17>;
+            // F+J
+            bindings = <&kp LA(DEL)>;
+        };
         
          combo_lctrl {
             timeout-ms = <50>;
             key-positions = <10 11>;
             // A+S
             bindings = <&kp LCTRL>;
+        };
+
+         combo_lctrl {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            // L+'
+            bindings = <&kp RCTRL>;
         };
         
          combo_rctrl {
@@ -52,21 +73,35 @@
             bindings = <&kp RG(LCTRL)>;
         };
         
-          combo_lalt {
+          combo_laltctr {
             timeout-ms = <50>;
             key-positions = <11 12>;
             // S+D
-            bindings = <&kp LALT>;
+            bindings = <&kp LC(LALT)>;
         };
         
-          combo_rgui {
+          combo_raltctr {
             timeout-ms = <50>;
             key-positions = <17 18>;
             // K+L
-            bindings = <&kp RGUI>;
+            bindings = <&kp RC(RALT)>;
         };
-        
 
+          combo_ctrl_opt {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            // S+D
+            bindings = <&sk LC(LALT)>;
+            layer = <1>;
+        };
+
+          combo_ctrl_cmd {
+            timeout-ms = <50>;
+            key-positions = <11 13>;
+            // S+F
+            bindings = <&sk LC(LALT)>;
+            layer = <1>;
+        };
         
     };
 
