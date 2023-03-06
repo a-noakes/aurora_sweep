@@ -24,14 +24,14 @@
             bindings = <&kp ESC>;
         };
 
-        combo_bspc_word {
+        combo_bspcword {
             timeout-ms = <50>;
             key-positions = <13 16>;
             // F+J
             bindings = <&kp LA(BSPC)>;
         };
 
-        combo_del_word {
+        combo_delword {
             timeout-ms = <50>;
             key-positions = <12 17>;
             // F+J
