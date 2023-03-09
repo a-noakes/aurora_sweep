@@ -47,9 +47,18 @@
 
          combo_x {
             timeout-ms = <60>;
-            key-positions = <21 22>;
+            key-positions = <22 23>;
             //x 
-            bindings = <&kp LCTRL>;
+            bindings = <&kp X>;
+            layer = 0;
+        };
+
+         combo_UNDER {
+            timeout-ms = <60>;
+            key-positions = <22 23>;
+            //UNDERSCORE 
+            bindings = <&kp UNDER>;
+            layer = 1;
         };
 
          combo_lctrl {
