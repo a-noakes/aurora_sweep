@@ -50,7 +50,7 @@
             key-positions = <22 23>;
             //x 
             bindings = <&kp X>;
-            layers = 0;
+            layers = <0>;
         };
 
          combo_UNDER {
@@ -58,7 +58,7 @@
             key-positions = <22 23>;
             //UNDERSCORE 
             bindings = <&kp UNDER>;
-            layers = 1;
+            layers = <1>;
         };
 
          combo_lctrl {
