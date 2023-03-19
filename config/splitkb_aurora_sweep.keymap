@@ -49,6 +49,13 @@
             bindings = <&kp LCTRL>;
         };
 
+        combo_z {
+            timeout-ms = <60>;
+            key-positions = <20 29>;
+            //Z+?
+            bindings = <&kp Z>;
+            layers = <0>;
+          };
 
          combo_x {
             timeout-ms = <60>;
@@ -120,7 +127,7 @@
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						            &kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&kp Z &kp X &kp C &kp V &kp B		                &kp N &kp M  &kp CMMA &kp DOT &kp FSLH
+		&key_repeat &kp X &kp C &kp V &kp B		                &kp N &kp M  &kp CMMA &kp DOT &kp FSLH
                     &sl 2   &kp LSHFT                     &kp SPACE  &sl 1
 		>;
 		};
